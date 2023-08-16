@@ -1,0 +1,14 @@
+{
+  "name": "my-nodejs-app",
+  "version": "1.0.0",
+  "description": "Practica final",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Miguel Higuera",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
