@@ -1,0 +1,24 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main # Cambia a la rama correcta si es diferente
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+jobs:
+- job: Build
+  steps:
+  - script: npm install
+    displayName: 'Install dependencies'
+
+- job: Deploy
+  steps:
+  - script: |
+      # Comandos o scripts para desplegar tu aplicación
+    displayName: 'Deploying the app'
+
+
